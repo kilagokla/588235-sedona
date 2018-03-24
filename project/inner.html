@@ -21,18 +21,67 @@
       
         <article class="search-filters">
         	<h2 class="visually-hidden">Фильтры</h2>
-          <img src="img/inner-filter-background.jpg" width="1200" height="562" alt="filter background">
-  			<!--форма с фильтрами-->	
-  			  <h3>НАЙДЕНО:3</h3>
-  		    <p>СОРТИРОВКА</p>
-  		    <ul class="sort">
-  			    <li class="sort-current">ПО ЦЕНЕ</li>
-  			    <li>ПО ТИПУ</li>
-  			    <li>ПО РЕЙТИНГУ</li>
-  		    </ul>
+          <img src="img/inner-filter-background.jpg" width="1200" height="562" alt="filter background"><!--потом просто бэкграунд в CSS-->
+
+          <fieldset>
+            <legend>Инфрастуктура</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimmingpool" id="swimmingpool" checked>
+                <label for="swimmingpool">Бассейн</label> 
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking" >
+                <label for="parking">Парковка</label> 
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi" >
+                <label for="wi-fi">WI-FI</label> 
+              </li>
+            </ul>
+          
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label> 
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label> 
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked>
+                <label for="apartment">Апартамены</label> 
+              </li>
+            </ul>
+          
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+              <p class="filter-option">
+              <label for="price">от 0 до 3000</label> <br> 
+              <input class="filter-input filter-input-range" type="range" min="0"  name="price" id="price">
+              </p>
+          
+          </fieldset>
+
+          <button type="submit" class="filter-button button"> Показать </button>
+
         </article>
         <article class="results">
-         	<h2 class="visually-hidden">Результаты поиска</h2>
+  			  
+        
+          <h2>НАЙДЕНО:3</h2>
+          <p>СОРТИРОВКА</p>
+          <ul class="sort">
+            <li class="sort-current">ПО ЦЕНЕ</li>
+            <li>ПО ТИПУ</li>
+            <li>ПО РЕЙТИНГУ</li>
+          </ul>  
+         	
             <ul class="results-list">
               <li class="results-item">
                 
