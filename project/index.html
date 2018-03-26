@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>SEDONA</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
   </head>
   <body>
   	<header class="main-header">
@@ -24,7 +27,7 @@
   		</section>
   		<section class="features">
   			<h1 class="visually-hidden">Преимущества</h1>
-  			<p>Рассмотрим 5 причин, по которым Седона кру, чем Гранд Каньон!</p>
+  			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   			<ul class="features-list">
   				<li class="feature-item special">
   					<h2>Настоящий городок</h2>
@@ -99,15 +102,17 @@
   	<footer class="main-footer">
   		<p class="footer-hashtag">#Visitsedona</p>
   		<div class="footer-social">
-  			<ul>
+  			<ul class="social-buttons">
   				<li><a class="social-button" href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter"></a></li>
   				<li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook"></a></li>
   				<li><a class="social-button" href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a></li>
   			</ul>
   		</div>
-  		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-logo.png" width="115" height="41" alt="by HTML academy"></a>
+      <p class="creator">Website by
+      	<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.svg" width="115" height="41" alt="by HTML academy"></a>
+      </p>
   	</footer>
-    <section class="modal modal-search">
+    <section class="modal-search">
       <form class="hotels-search-form" action="https://echo.htmlacademy.ru" method="get">
           
           <p class="hotels-search-item">
@@ -126,7 +131,8 @@
             <label for="children">Дети:</label>
             <input id="children" type="number" name="children" value="" placeholder="0">  
           </p> 
-          <button type="submit" class="search-button button"> Найти </button>
+          <button type="submit" class="search-button button"> Найти </button><!--может ссылка,если переводит,да и оформить проще-->
+      </form>    
       <button class="modal-close" type="button">Закрыть</button>
       
     </section>
