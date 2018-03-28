@@ -42,7 +42,7 @@ input[type="radio"].visually-hidden {
 
 
 .main-header {
-	min-height: 56px;
+	height: 56px;
 
 
 }
@@ -51,6 +51,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
 
 	font-size: 14px;
 	font-weight: bold;
@@ -82,9 +83,9 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
 	display: block;
-	padding: 22px 81px;
+	padding: 15px 81px;
 
-	vertical-align: middle;
+	
 	color: #000000;
 
 }
@@ -108,7 +109,12 @@ input[type="radio"].visually-hidden {
 
 }
 
+
+
+
 .features {
+	text-align: center;
+	margin-top: -180px;
 
 }
 
@@ -133,6 +139,12 @@ input[type="radio"].visually-hidden {
 
 
 	background-color: #eeeeee;
+
+}
+.feature-item img{
+	width: 800px;
+	height: 257px;
+
 
 }
 
