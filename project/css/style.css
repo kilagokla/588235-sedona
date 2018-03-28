@@ -1,17 +1,20 @@
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	width: 1200px;
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px/**/;
-	line-height: 26px/**/;
+	font-size: 14px;
+	line-height: 26px;
 	font-weight: 400;
 	color: #000000;
 	text-transform: uppercase;
+
 	background-color: #ffffff; 
+	/*box-shadow:  0px 0px 40px 0px #e1e1e1;*/
+	border-right: 40px solid #f2f2f2;
+	border-left: 40px solid #f2f2f2;
 	
-	/*box-shadow: 40px 0 0 10px  #e1e1e1;*/
-}
+}	
 
 a {
 	text-decoration: none;
@@ -67,7 +70,7 @@ input[type="radio"].visually-hidden {
 	height: 70px;
 	display:block;
 	position: absolute;
-	left:531px;
+	padding-left: 531px;
 }
 
 .site-navigation {
@@ -175,11 +178,21 @@ input[type="radio"].visually-hidden {
 	padding-top: 61px;
 	text-align: center;*/
 	
-
 }
 
+/*
+.idnex-search a{
+	
+	height: 86px;
+	width: 568px;
+
+
+}*/
+
 .hotels-search{
+	margin-top: 57px;
 	text-align: center;
+
 }
 
 .hotels-search h1{
@@ -196,14 +209,16 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 }*/
 .main-footer {
+	margin-top: -120px;
 
 	display: flex;
 	justify-content: space-between;
 	padding-right: 101px;
 	padding-left: 151px;
 	align-items: center;
+	background-color:  rgb(255, 255, 255, 0.7);
 
-	background-color: rgb(255, 255, 255, 0.5);
+	
 
 }
 
@@ -251,6 +266,7 @@ input[type="radio"].visually-hidden {
 	color:#000000;
 
 	background-color: #ffffff;
+	/*box-shadow:0px 0px 20px 5px ;*/
 
 }
 
@@ -377,9 +393,12 @@ input[type="radio"].visually-hidden {
 }
 
 
+
 .filter-range {
   width: 330px;
- /* margin: 20px auto; */
+  margin-top: 30px;
+  margin-right: 73px;
+
 
   color: #ffffff;
   text-transform: uppercase;
@@ -561,6 +580,7 @@ input[type="radio"].visually-hidden {
 
 .results-item:last-child {
 	border-bottom: 2px solid #e5e5e5;
+	margin-bottom: 150px;
 
 }
 
