@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+   <div class="conteiner">
   	<header class="main-header">
       <a class="main-header-logo"><img src="img/logo-sedona.png" width="138" height="70" alt="logotype SEDONA"></a> 
   		<nav class="main-navigation">
@@ -19,7 +20,7 @@
   			</ul>
   		</nav>
   	</header>
-  	<main class="contanier">
+  	<main class="contant">
   		<section class="intro">
   		    <img src="img/index-header-intro.jpg" width="1200" height="780" alt="view of SEDONA">
           
@@ -27,10 +28,10 @@
   		<section class="features">
   			<h1 class="visually-hidden">О Седоне</h1>
         <h2>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-  			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  			<p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   			<ul class="features-list">
   				<li class="feature-item special">
-  					<h2>Настоящий городок</h2>
+  					<h2>Настоящий<br>городок</h2>
   					<p>№1</p>
   					<p>Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
             
@@ -60,24 +61,24 @@
           <img src="img/diablo-bridge.jpg" width="800" height="257" alt="diablo-bridge">
   				<li class="feature-item special">
             
-  					<h2>Там есть мост дьвола</h2>
+  					<h2>Там есть<br>мост дьвола</h2>
   					<p>№2</p>
   					<p>Да, по нему можно пройтись! Если , конечно<br>вы осмелитесь</p>
             
   				</li>
   				<li class="feature-item">
-  					<h2>Небольшая площадь</h2>
+  					<h2>Небольшая<br>площадь</h2>
   					<p>№3</p>
   					<p>Все достопримечательности <br>находятся очень близко</p>
   				</li>
 
   				<li class="feature-item">
-  					<h2>Красивая дорога</h2>
+  					<h2>Красивая<br>дорога</h2>
   					<p>№4</p>
   					<p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
   				</li>
   				<li class="feature-item">
-  					<h2>Мало туристов</h2>
+  					<h2>Мало<br>туристов</h2>
   					<p>№5</p>
   					<p>Большинство едет в Гранд Каньон и<br>толпится там</p>
   				</li>
@@ -89,7 +90,7 @@
 
 
 
-        <a class="button idnex-search" href="search.html" >Поиск гостиницы в Седоне</a> <!--нажатие на эту ссылку вызывает модальное окно-->
+        <a class="button idnex-search modal-close" href="search.html" >Поиск гостиницы в Седоне</a> <!--нажатие на эту ссылку вызывает модальное окно-->
   		<section class="map">
         <h1 class="visually-hidden">Расположение гостиницы на карте</h1>
         <p>
@@ -134,10 +135,11 @@
           </p> 
           <button type="submit" class="search-button button"> Найти </button>
       </form>    
-      <button class="modal-close" type="button">Закрыть</button>
-      
+            
     </section>
-    
+     <script src="popup.js" "></script>
+     
+    </div> 
 
   </body>
 </html>
