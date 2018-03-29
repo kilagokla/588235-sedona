@@ -291,7 +291,7 @@ input[type="radio"].visually-hidden {
 
 }
 .hotels-search a{
-	
+
 
 
 	height: 86px;
@@ -309,7 +309,7 @@ input[type="radio"].visually-hidden {
 	margin-top: 94px;
 }
 
-.main-footer {
+.main-footer {/*не все работает*/
 	margin-top: -120px;
 
 	display: flex;
@@ -365,18 +365,36 @@ input[type="radio"].visually-hidden {
 
 .modal-search {
 	/*display: none;*/
+	width: 568px;
+	height: 395px;
+	margin-left:316px;
 	color:#000000;
-
 	background-color: #ffffff;
-
-	/*box-shadow:0px 0px 20px 5px ;*/
-
+	box-shadow:0 -5px 15px 0 rgba(0, 0, 0, 0.2); ;
 }
 
-.hotels-search-form input[type="text"],
-.hotels-search-form input[type="number"] {
+.hotels-search-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.hotels-search-item {
+	margin: 0;
+	margin-top: 55px;
+	margin-left: 57px;
+
+
+}
+.hotels-search-item label {
+	display: inline-block;
+	font-weight: bold;
+}
+
+
+.hotels-search-item input {
 	font: inherit;
-	color: #000000;
+	
+	
 	text-transform: uppercase;
 	font-weight: bold;
 
@@ -386,31 +404,50 @@ input[type="radio"].visually-hidden {
 
 }
 
-/*.hotels-search-form input[type="number"] {
-	background-image: url("img/calendar-icon.svg");
-}*/
+.hotels-search-item input::placeholder {
+	color: #000000;
+}
 
-.hotels-search-form input:focus {
+.hotels-search-form input[type="text"] {
+	box-sizing: border-box;
+	width:346px;
+	background-image: url("../img/calendar-icon.svg");
+	background-repeat: no-repeat;
+
+}
+.hotels-search-form input[type="number"] {
 	
-	background-color: #ffffff;
-	border-color: #e5e5e5;
+	box-sizing: border-box;
+	width:114px;
 	
 }
+
+
 .hotels-search-form input:hover {
 	
 	background-color: #ebebeb;
 	border-color: #ebebeb;
 	
 }
-
-.hotels-search-form label {
-	font-weight: bold;
+.hotels-search-form input:focus {
+	
+	background-color: #ffffff;
+	border-color: #e5e5e5;
+	
 }
 
 
 
+
 .search-button {
-	font: inherit;
+	
+	width: 458px;
+	height: 58px;
+	margin-left: 56px;
+	margin-top: 40px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
 
 	text-align: center;
 	color: #ffffff;
@@ -669,6 +706,32 @@ input[type="radio"].visually-hidden {
 
 }
 
+/*то,что ниже про названия отелей-ссылки не работает*/
+.result-item a {
+	font: inherit;
+
+	text-align: center;
+	color: #000000;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	
+	border: none;
+
+
+}
+
+.result-item a:focus,
+.result-item a:hover {
+	color: #81b3d2;
+}
+
+
+.result-item a:active {
+	color: #b2b2b2;
+	 
+}
 
 
 .sort p {
