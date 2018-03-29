@@ -131,7 +131,13 @@ input[type="radio"].visually-hidden {
 	
 
 }
+.img {
+	width: 800px;
+	height: 257px;
 
+
+
+}
 .reasons{
 	padding-top: 28px;
 	padding-bottom: 37px;
