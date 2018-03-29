@@ -131,13 +131,9 @@ input[type="radio"].visually-hidden {
 	
 
 }
-.img {
-	width: 800px;
-	height: 257px;
 
 
 
-}
 .reasons{
 	padding-top: 28px;
 	padding-bottom: 37px;
@@ -162,21 +158,21 @@ input[type="radio"].visually-hidden {
 
 .feature-item{
 
+	width: 100%;
+	background-color: #eeeeee;
+
+}
+.feature-item.text {
 	width: 400px;
 	height: 232px;
 	padding-top: 27px;
 	text-align: center;
-	
 
-
-	background-color: #eeeeee;
 
 }
-.feature-item img{
+.feature-item.img {
 	width: 800px;
 	height: 257px;
-
-
 }
 
 .feature-item h2{
@@ -190,6 +186,7 @@ input[type="radio"].visually-hidden {
 
 
 .feature-item.special{
+
 	color: #ffffff;
 	background-color: #81b3d2;
 }
@@ -399,7 +396,7 @@ input[type="radio"].visually-hidden {
 
 .search-filters {
 	background-color: #5496bd; 
-	background-image: url("img/inner-filter-background.jpg");
+	background-image: url("../img/inner-filter-background.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }/**картинка не вставляется*/
