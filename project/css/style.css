@@ -141,7 +141,7 @@ input[type="radio"].visually-hidden {
 
 .features-list {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content:space-between;
 	align-items: stretch; 
@@ -194,8 +194,10 @@ input[type="radio"].visually-hidden {
 
 	list-style: none;
 
-	/*display: inline-block;
-
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+/*
 	width: 1200px;
 	height: 270px;
 	padding-top: 61px;
