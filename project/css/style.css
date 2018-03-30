@@ -312,35 +312,54 @@ input[type="radio"].visually-hidden {
 
 .main-footer {/*не все работает*/
 	height: 120px;
+	width: 1200px;
 	margin-top: -128px;
 	position: absolute;
 
 	display: flex;
-	justify-content: space-between;
-	padding-right: 101px;
-	padding-left: 151px;
+	justify-content: space-around;
+	
 	align-items: center;
-	background-color:  rgb(255, 255, 255, 0.7);
+	background-color:  rgb(255, 255, 255, 0.9);
 
 	
 
 }
 
-.footer-hashtag {
+.sedona-hashtag {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
 
 }
-.social-buttons {
-	list-style: none;
+
+.footer-social ul{
 	display: flex;
+	flex-direction: row;
+	list-style: none;
 
 	align-items: center;
+}
+
+.social-buttons {
+	
+	
 
 	background-color: #81b3d2;/*временно,чтобы видеть svg*/
 
 }
+.social-button  {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+	height: 48px;
+	color:#ffffff;
+	background-color: #81b3d2;
+
+}
+
+
 /*
 .social-button a {
 	color:#ffffff;
@@ -360,11 +379,26 @@ input[type="radio"].visually-hidden {
 
 }*/
 
-.creator {
+.footer-creator {
 	font-size: 14px;
 	line-height: 26px;
-	background-color: #81b3d2;/*временно,чтобы видеть svg*/
+	background-color: #81b3d2; /*временно */
+
 }
+/*
+.footer-creator a::after {
+	content: "";
+	background-image: url("../img/html-academy-logo.svg");
+	background-color: #81b3d2; 
+
+
+}*/
+
+
+
+
+
+
 
 .modal-search {
 	/*display: none;*/
