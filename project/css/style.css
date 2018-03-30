@@ -243,6 +243,11 @@ input[type="radio"].visually-hidden {
 
 
 .hotels-search {
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
 	
 	text-align: center;
 
@@ -251,15 +256,14 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-search h1{
-	padding-top: 36px;
-	padding-bottom: 10px;
-
-	font-size: 28px;
+	padding-top: 28px;
+	
+	font-size: 30px;
 	font-weight: bold;
-	line-height: 28px;
-
-
-
+	line-height: 36px;
+}
+.hotels-search p{
+	margin-top: 5px;
 
 
 }
@@ -291,23 +295,20 @@ input[type="radio"].visually-hidden {
 
 }
 .hotels-search a{
+	margin-top: 31px;
+	padding-top:31px;
 
-
-
-	height: 86px;
+	height: 53px;
 	width: 568px;
-	padding:35px 138px;
-
-
+	
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
 
 
+
 }
-.map{
-	margin-top: 94px;
-}
+
 
 .main-footer {/*не все работает*/
 	margin-top: -120px;
