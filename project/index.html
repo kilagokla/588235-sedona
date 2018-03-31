@@ -150,8 +150,9 @@
       <h1 class="visually-hidden">Форма поиска готиницы</h1>
       <form class="hotels-search-form" action="https://echo.htmlacademy.ru" method="get">
           
-          <p class="hotels-search-item date">
+          <div class="hotels-search-item date">
             <label for="date-in">Дата заезда:</label>
+            <div class="chosen-date">
             <input id="date-in" type="text"  required name="date-in" value="" placeholder="24 апреля 2018">
             <a class="calendar" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="22px" viewBox="0 0 21 22">
@@ -167,10 +168,12 @@
                 <rect x="13.781" y="8.225" width="2.625" height="2.066" fill="#cacaca"/>
               </svg>
             </a>
+            </div>
 
-          </p>
-          <p  class="hotels-search-item date">       
+          </div>
+          <div  class="hotels-search-item date">       
             <label for="date-out">Дата выезда:</label>
+            <div class="chosen-date">
             <input id="date-out" type="text"  required name="date-out" value="" placeholder="4 июля 2018">
             <a class="calendar" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="22px" viewBox="0 0 21 22">
@@ -186,21 +189,22 @@
                 <rect x="13.781" y="8.225" width="2.625" height="2.066" fill="#cacaca"/>
               </svg>
              </a>
+             </div>
 
-          </p> 
-          <p  class="hotels-search-item people">
+          </div> 
+          <div  class="hotels-search-item people">
             <label for="adults">Взрослые:</label>
             <input id="adults" type="number"  required name="adults" value="" placeholder="2" min="0" step="1">
-          </p>
-          <p  class="hotels-search-item people">       
+          </div>
+          <div  class="hotels-search-item people">       
             <label for="children">Дети:</label>
             <input id="children" type="number"  required name="children" value="" placeholder="0" min="0" step="1">  
-          </p> 
+          </div> 
           <button type="submit" class="search-button button"> Найти </button>
       </form>    
             
     </section>
-     <!--<script src="popup.js" "></script>-->
+     
 
     </div> 
 
