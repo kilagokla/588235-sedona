@@ -192,14 +192,23 @@
              </div>
 
           </div> 
-          <div  class="hotels-search-item people">
-            <label for="adults">Взрослые:</label>
-            <input id="adults" type="number"  required name="adults" value="" placeholder="2" min="0" step="1">
+          <div  class="hotels-search-item adults">
+            <label for="adults-count">Взрослые:</label>
+            <div chosen-adults">
+            <a class="minus" href=""><img src="img/minus-icon.png" width="12" height="3" alt="minus"></a>  
+            <input id="adults-count" type="text"  required name="adults-count" value="" placeholder="2">
+            <a class="plus" href=""><img src="img/plus-icon.png" width="11" height="11" alt="plnus"></a>   
           </div>
-          <div  class="hotels-search-item people">       
-            <label for="children">Дети:</label>
-            <input id="children" type="number"  required name="children" value="" placeholder="0" min="0" step="1">  
+          </div>
+          <div  class="hotels-search-item children">  
+               
+            <label for="children-count">Дети:</label>
+            <div chosen-children">
+            <a class="minus" href=""><img src="img/minus-icon.png" width="12" height="3" alt="minus"></a> 
+            <input id="children-count" type="text"  required name="children-count" value="" placeholder="0">
+            <a class="plus" href=""><img src="img/plus-icon.png" width="11" height="11" alt="plnus"></a>   
           </div> 
+          </div>
           <button type="submit" class="search-button button"> Найти </button>
       </form>    
             

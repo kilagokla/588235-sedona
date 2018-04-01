@@ -164,7 +164,7 @@ input[type="radio"].visually-hidden {
 
 .features {
 	
-	margin-top: -180px;
+	margin-top: -200px;
 
 	text-align: center;
 	
@@ -203,6 +203,7 @@ input[type="radio"].visually-hidden {
 
 }
 .feature-item h2{
+	margin-top: 20px;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 22px;
@@ -301,6 +302,7 @@ input[type="radio"].visually-hidden {
 
 
 }
+
 .button {
 	font: inherit;
 
@@ -325,7 +327,6 @@ input[type="radio"].visually-hidden {
 .button:active {
 	color: #857871;
 	background-color: #503e33; 
-
 
 }
 .hotels-search a{
@@ -480,7 +481,7 @@ input[type="radio"].visually-hidden {
 .hotels-search-item {
 	
 	
-	height:38px;
+	height:45px;
 	margin:0;
 	display: flex;
 
@@ -493,10 +494,12 @@ input[type="radio"].visually-hidden {
 }
 .hotels-search-item label {
 	
-	height:38px;
-	text-align: center;
-	vertical-align: middle;
-	font-weight: bold;
+	height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -521,7 +524,7 @@ input[type="radio"].visually-hidden {
 
 .chosen-date{
 	position: relative;
-	flex-grow: 2;
+	
 
 }
 .chosen-date input#date-in,
@@ -539,14 +542,59 @@ input[type="radio"].visually-hidden {
 	 margin-top: -30px;
 	
 }
+
+.hotels-search-item.adults {
+	width: 69%;
+	display: flex;
+}
+.hotels-search-item.children {
+	width: 31%;
+	display: flex;
+}
+.chosen-adults,
+.chosen-children{
+	position: relative;
+	display: flex;
+
+}
+a.minus {
+	position:absolute;
+	text-align: center;
+	margin-left:-10px;
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+
+.chosen-adults input#adults-count,
+.chosen-children input#children-count{
+	width: 38px;
+	height: 38px;
+
+}
+a.plus {
+	position:absolute;
+	text-align: center;
+	margin-left:-104px;
+	width: 38px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
 /*
-.hotels-search-item.date input{
-	flex-align: stretch;
+a.minus:focus,
+a.minus::hover {
+	background-position: absolute;
+	background-image: url(../img/minus-hover-icon.png);
+	
+}
+
+
+a.minus:active {
+	background-position: absolute;
+	background-image: url(../img/minus-point-icon.png);
+	
 }
 */
-.hotels-search-item.people {
-	width: 50%;
-}
 
 
 
@@ -579,13 +627,6 @@ input[type="radio"].visually-hidden {
 	fill: #81b3d2;
 
 }
-/*
-#adults{
-	appearance: textfield;
-}
-#adults::inner-spin-button {
-	display: none;
-}*/
 
 .search-button {
 	
@@ -622,6 +663,7 @@ input[type="radio"].visually-hidden {
 
 
 
+
 /*inner-page*/
 
 
@@ -634,21 +676,41 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 }
 
+
 .filter {
 	height: 220px;
 	display: flex;
 	flex-direction: row;
-
+	justify-content: space-between;
 
 
 }
 
 .filter fieldset {
 	border: none;
+	margin: 0;
+	padding: 0;
+	
 	
 
 }
+
+.filter fieldset:first-of-type {
+	width: 167px;
+	
+	padding-left: 73px;
+
+}	
+/*
+.filter fieldset:nth-of-type(2) {
+	width: 167px;
+	
+	padding-left: -73px;
+
+}	*/
+
 .filter legend {
+	margin-top: 30px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
@@ -661,11 +723,12 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
+
 }
 
 .filter-option {
-	width: 300px;
-	padding-left: 
+	width: 200px;
+	margin-bottom: 30px; 
 }
 
 .filter-option label {
@@ -847,14 +910,28 @@ input[type="radio"].visually-hidden {
 }
 
 
+
+
+
+.sort {
+	height:86px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 .results h2{
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-
+	margin-left: 73px;
+	margin-right: 40px;
 
 }
-
+.results p{
+	margin-right: 10px;
+	font-size: 12px;
+	line-height: 18px;
+}
 
 
 .results ul{
@@ -862,40 +939,46 @@ input[type="radio"].visually-hidden {
 	margin:0;
 	padding: 0;
 }
-
-
-.sort {
-	display: flex;
-	flex-direction: row;
-}
-
-.sort-list {
+ul.sort-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
 .sort-list a {
-	margin-left: 30px;
+	margin-left: 33px;
 	font-size: 12px;
 	line-height: 18px;
 	color: #c6c6c6;
 
 	
 }
-
-.sort-list a:hover,
-.sort-list a:focus {
+.sort-dir {
+	display: flex;
+	justify-content: space-between;
 	
-	color: #81b3d2;
-	border-bottom: 2px dashed #81b3d2;
+	flex-grow: 2;
+	padding-left: 508px;/*15px лишних от предыдущего*/
+	padding-right: 73px;
+
 }
 
-.sort-list a:active {
+.up-dir:hover path,
+.down-dir:hover path,
+.up-dir:focus path,
+.down-dir:focus path,{
 	
-	color: #000000;
-	border-bottom: none;
+	fill: #81b3d2;
+	
 }
+
+.up-dir:active path,
+.down-dir:active path{
+	
+	fill: #000000;
+	
+}
+
 
 
 .results-list{
@@ -925,14 +1008,15 @@ input[type="radio"].visually-hidden {
 
 .results-item:last-child {
 	border-bottom: 2px solid #e5e5e5;
-	margin-bottom: 120px;
+	margin-bottom: 118px;
 	
 }
 
 
 .results-item-img {
 
-	margin:0;
+	margin: 0;
+	margin-right: 0px;/*через инспектор видно,что он все-равно остается....*/
 	padding: 0;
 	width: 240px;
 	
@@ -942,15 +1026,16 @@ input[type="radio"].visually-hidden {
 .results-item-img img{
 	width: 135px;
 	height: 90px;
-	padding-top: 30px;
-	padding-left: 50px;
-	padding-right: 30px;
+	padding-top: 28px;
+	padding-left: 73px;
+	padding-right: 32px;
 
 }
 
 .results-item-info {
 	width: 258px;
-	margin-right:  462px;
+	margin-right:  452px;/*должно быть 462, но маргин справа у картинки*/
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -958,13 +1043,32 @@ input[type="radio"].visually-hidden {
 	flex:3;
 }
 
-.results-item-info p{
+.results-item-info h2{
 	margin: 0;
-	margin-right: 39px;
+	margin-top: 15px;
+	
+
 }
 
 
+.results-item-info p{
+	margin: 0;
+	margin-right: 39px;
 
+
+}
+.type-cost {
+	width: 183px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+
+.type-cost p{
+	margin:0;
+	font-size: 14px;
+	line-height: 21px;
+}
 
 .results-item-rating{
 	margin:0;
@@ -975,9 +1079,10 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	align-items: center; 
 
-
 }
-
+.book {
+	padding:0;
+}
 
 .results-item-rating p{
 	
@@ -989,16 +1094,17 @@ input[type="radio"].visually-hidden {
 	color:#666666;
 	background-color: #f2f2f2;
 }
-
+/*
 .results-item-rating p::before {
 	content: url("../img.villas-at-poco.jpg");
 	position: absolute;
 	
 
 	
-}
+}*/
 
 a.result-item{
+
 	font: inherit;
 	text-align: center;
 	color: #000000;
@@ -1026,6 +1132,8 @@ a.result-item:active {
 
 a.more {
 	font: inherit;
+	width: 110px;
+	height: 27px;
 
 	text-align: center;
 	color: #ffffff;
@@ -1050,3 +1158,8 @@ a.more:active {
 	background-color: #5496bd; 
 }
 
+.book {
+	width: 142px;
+	height: 27px;
+	cursor: pointer;
+}
