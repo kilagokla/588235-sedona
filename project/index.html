@@ -5,7 +5,7 @@
     <title>SEDONA</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
    <div class="conteiner">
@@ -195,18 +195,17 @@
           <div  class="hotels-search-item adults">
             <label for="adults-count">Взрослые:</label>
             <div class="chosen-adults">
-            <a class="minus" href=""><img src="img/minus-icon.png" width="12" height="3" alt="minus"></a>  
+            <button type="button" class="count-btn minus">-</button>
             <input id="adults-count" type="text"  required name="adults-count" value="" placeholder="2">
-            <a class="plus" href=""><img src="img/plus-icon.png" width="11" height="11" alt="plnus"></a>   
+            <button type="button" class="count-btn plus">+</button>  
           </div>
           </div>
           <div  class="hotels-search-item children">  
-               
             <label for="children-count">Дети:</label>
             <div class="chosen-children">
-            <a class="minus" href=""><img src="img/minus-icon.png" width="12" height="3" alt="minus"></a> 
+            <button type="button" class="count-btn minus">-</button>
             <input id="children-count" type="text"  required name="children-count" value="" placeholder="0">
-            <a class="plus" href=""><img src="img/plus-icon.png" width="11" height="11" alt="plnus"></a>   
+            <button type="button" class="count-btn plus">+</button>   
           </div> 
           </div>
           <button type="submit" class="search-button button"> Найти </button>
@@ -216,6 +215,6 @@
      
 
     </div> 
-
+    <script src="js/scripts.min.js" ></script>
   </body>
 </html>
