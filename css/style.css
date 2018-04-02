@@ -910,7 +910,7 @@ input[type="radio"].visually-hidden {
 	-webkit-box-align:stretch;
 	    -ms-flex-align:stretch;
 	        align-items:stretch;
-	margin-left: 73px;
+	margin-left: 72px;
 	margin-right: 12px;
 	
 }
@@ -1003,6 +1003,7 @@ input[type="radio"].visually-hidden {
 	font-size: 0;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+
 }
 
 .price-controls::after {
@@ -1022,7 +1023,7 @@ input[type="radio"].visually-hidden {
 .price-controls label {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 26px;
 	vertical-align: top;
 	cursor: pointer;
 }
@@ -1132,14 +1133,15 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	margin-left: 73px;
-	margin-right: 50px;
+	margin-left: 72px;
+	margin-right: 46px;
 
 }
 
 .sort p {
 	font-size: 12px;
 	line-height: 18px;
+	margin-right: 5px;
 
 }
 
@@ -1197,7 +1199,7 @@ ul.sort-list {
 	    -ms-flex-positive: 2;
 	
 	        flex-grow: 2;
-	padding-left: 508px;/*15px лишних от предыдущего*/
+	padding-left: 508px;
 	padding-right: 73px;
 
 }
@@ -1251,6 +1253,7 @@ ul.sort-list {
 }
 
 .results-item:last-child {
+	
 	height: 147px;
 	border-bottom: 2px solid #e5e5e5;
 	margin-bottom: 120px;
@@ -1260,9 +1263,9 @@ ul.sort-list {
 
 .results-item-img {
 	margin: 0;
-	margin-right: 0px;/*через инспектор видно,что он все-равно остается....*/
+	
 	padding: 0;
-	width: 240px;
+	width: 237px;
 	
 }
 
@@ -1270,15 +1273,16 @@ ul.sort-list {
 .results-item-img img {
 	width: 135px;
 	height: 90px;
-	padding-top: 28px;
-	padding-left: 73px;
-	padding-right: 32px;
+	padding-top: 29px;
+	padding-left: 72px;
+	
 
 }
 
 .results-item-info {
 	width: 258px;
-	margin-right:  452px;/*должно быть 462, но маргин справа у картинки*/
+	margin-right: 465px;
+	margin-bottom: 25px;
 
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1297,11 +1301,39 @@ ul.sort-list {
 	        flex: 3;
 }
 
+
 .results-item-info h2 {
 	margin: 0;
-	margin-top: 15px;
+	margin-top: 18px;
+
+	
 	
 }
+a.result-item {
+	
+	
+	font: inherit;
+	text-align: center;
+	color: #000000;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	border: none;
+
+}
+
+a.result-item:focus,
+a.result-item:hover {
+	color: #81b3d2;
+}
+
+
+a.result-item:active {
+	color: #b2b2b2;
+	 
+}
+
 
 .results-item-info p {
 	margin: 0;
@@ -1350,28 +1382,6 @@ ul.sort-list {
 	padding:0;
 }
 
-a.result-item {
-	font: inherit;
-	text-align: center;
-	color: #000000;
-	vertical-align: middle;
-	text-transform: uppercase;
-	font-weight: bold;
-
-	border: none;
-
-}
-
-a.result-item:focus,
-a.result-item:hover {
-	color: #81b3d2;
-}
-
-
-a.result-item:active {
-	color: #b2b2b2;
-	 
-}
 
 
 a.more {
