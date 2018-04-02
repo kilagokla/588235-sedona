@@ -196,10 +196,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sedona-slogan{
-	width: 450px;
+	width: 470px;
 	padding:0;
 	margin:0;
-	padding-left: 375px;
+	padding-left: 365px;
 	padding-top: 35px;
 	margin-bottom: 30px;
 	text-align: center;
@@ -337,6 +337,18 @@ input[type="radio"].visually-hidden {
 
 
 }
+.detail img{
+	width: 75px;
+	height: 76px;
+	margin-bottom: 11px;
+}
+
+.detail h2{
+	margin: 0;
+	margin-bottom: 20px;
+
+
+}
 
 
 .hotels-search {
@@ -362,20 +374,22 @@ input[type="radio"].visually-hidden {
 
 
 }
-
 .hotels-search h1 {
-	padding-top: 28px;
+	margin: 0;
+	padding-top: 50px;
+	margin-bottom: 23px;
 	
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 36px;
 }
+
 .hotels-search p{
-	margin-top: 5px;
+	margin: 0;
+	margin-bottom: 11px;
 
 
 }
-
 .button {
 	font: inherit;
 
@@ -403,8 +417,8 @@ input[type="radio"].visually-hidden {
 
 }
 .hotels-search a {
-	margin-top: 31px;
-	padding-top:31px;
+	margin-top: 29px;
+	padding-top: 31px;
 
 	height: 53px;
 	width: 568px;
@@ -428,6 +442,7 @@ input[type="radio"].visually-hidden {
 	width: 1200px;
 
 	margin-top: -120px;
+
 	position: absolute;
 
 	display: -webkit-box;
@@ -449,6 +464,7 @@ input[type="radio"].visually-hidden {
 
 .footer-hashtag {
 	width: 400px;
+	padding-top: 8px;
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;
@@ -478,6 +494,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-pack: center;
             justify-content: center;
 	width: 400px;
+	padding-top: 8px;
 
 }
 
@@ -550,6 +567,7 @@ input[type="radio"].visually-hidden {
 }
 .creator {
 	padding-left: 8px;
+	padding-top: 10px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -573,7 +591,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	position: absolute;
 	width: 568px;
-	height: 395px;
+	height: 397px;
 	margin-left:316px;
 	margin-top: -593px;
 	color: #000000;
@@ -583,7 +601,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-search-form {
-	margin-top: 55px;
+	margin-top: 57px;
 	margin-left: 55px;
 	height: 286px;
 	width: 458px;
@@ -596,12 +614,13 @@ input[type="radio"].visually-hidden {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	 align-items: top;       
+	       
 }
 
 .hotels-search-item {
 	height: 45px;
 	margin: 0;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -640,6 +659,42 @@ input[type="radio"].visually-hidden {
 	border: 2px solid #f2f2f2;
 
 
+}
+.hotels-search-item input::-webkit-input-placeholder {
+	color: #000000;
+	
+}
+
+.hotels-search-item input:-ms-input-placeholder {
+	color: #000000;
+	
+}
+
+.hotels-search-item input::-ms-input-placeholder {
+	color: #000000;
+	
+}
+
+.hotels-search-item input::placeholder {
+	color: #000000;
+	
+}
+.hotels-search-item input[name="date-in"]::placeholder,
+.hotels-search-item input[name="date-out"]::placeholder {
+	padding-left: 10px
+	
+}
+
+
+.hotels-search-form input:hover {
+	background-color: #ebebeb;
+	border-color: #ebebeb;
+
+}
+
+.hotels-search-form input:focus {
+	background-color: #ffffff;
+	border-color: #e5e5e5;
 }
 
 .hotels-search-item.date {
@@ -702,6 +757,7 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;	
 
+
 }
 
 .chosen-adults{
@@ -710,6 +766,7 @@ input[type="radio"].visually-hidden {
 
 .chosen-children {
 	margin-left: 26px;
+
 
 }
 
@@ -747,33 +804,7 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 }
 
-.hotels-search-item input::-webkit-input-placeholder {
-	color: #000000;
-}
 
-.hotels-search-item input:-ms-input-placeholder {
-	color: #000000;
-}
-
-.hotels-search-item input::-ms-input-placeholder {
-	color: #000000;
-}
-
-.hotels-search-item input::placeholder {
-	color: #000000;
-}
-
-
-.hotels-search-form input:hover {
-	background-color: #ebebeb;
-	border-color: #ebebeb;
-
-}
-
-.hotels-search-form input:focus {
-	background-color: #ffffff;
-	border-color: #e5e5e5;
-}
 
 .calendar:focus path,
 .calendar:hover path,
@@ -792,7 +823,9 @@ input[type="radio"].visually-hidden {
 	width: 100%;
 	height: 58px;
 	padding: 0;
-	margin-top: 30px;
+	margin-top: 24px;
+	margin-bottom: -24px;
+	
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
